@@ -1,0 +1,369 @@
+/* 
+    Created on : 11/10/2019, 18:39:44
+    Author     : ferna
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+*
+{
+    mangin: 0;
+    padding: 0;
+        -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                vertical-align: middle;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #444;
+    background: #A2A2A2 url(../imagens/fundoDoSite.png) center no-repeat;
+    background-size: 100%;
+}
+h1,h2,h3,h4,h5,h6
+{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+p
+{
+    line-height: 1.2em;
+    letter-spacing: 0;
+}
+input,select,textarea
+{
+    width: 100%;
+    padding: 10px;
+    background: #EEE;
+    border: 0;
+}
+ul,li,ol
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+.conteudo
+{
+    width: 960px;
+    margin: 2% auto;
+    display: block;
+    position: relative;
+    margin-left: -480px;
+    float: left;
+    left: 50%;
+}
+.base-central
+{
+    width: 100%;
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+        -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+    box-shadow: 0 0 7px 0 #444;
+        -webkit-box-shadow: 0 0 7px 0 #444;
+            -moz-box-shadow: 0 0 7px 0 #444;
+}
+.base-topo
+{
+    width: 100%;
+    display: block;
+    padding: 20px 40px;
+    background: #009688;
+    border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+            -moz-border-radius: 5px 5px 0 0;
+}
+.base-topo .logo
+{
+    width: 195px;
+    display: inline-block;
+    height: 50px;
+    background: url(../imagens/central.png) no-repeat;
+}
+.base-topo .busca
+{
+    width: 290px;
+    float: right;
+    margin-top: 0px;
+    position: relative;
+}
+.base-topo .busca input
+{
+    background: #323232;
+    box-shadow: inset 0 0 7px 0 #444;
+    border-radius: 5px;
+    color: #DDD;
+}
+.base-topo .busca .but
+{
+    background: url(../imagens/ico-lupa.png) no-repeat;
+    box-shadow: none;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 0;
+}
+.menu
+{
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    background: #323232;
+    border-bottom: solid 5px #E0E0E0;
+}
+.menu ul
+{
+    display: block;
+    text-align: center;
+}
+.menu li
+{
+    display: inline-block;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-right: solid 1px #DDD;
+}
+.menu li:last-child
+{
+    border-right: 0;
+}
+.menu li a
+{
+    display: inline-block;
+    color: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+/*Corpo do site*/
+.base-home
+{
+    width: 100%;
+    float: left;
+    padding: 20px 40px;
+}
+.titulo
+{
+    display: block;
+    padding: 10px 0;
+    color: #323232;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+.titulo:before
+{
+    content: url(../imagens/traco.png);
+    padding-right: 10px;
+    position: relative;
+    top: 1px;
+}
+.titulo:after
+{
+    content: url(../imagens/traco2.png);
+    padding-left: 10px;
+    position: relative;
+    top: 1px;
+}
+.titulo span
+{
+    position: relative;
+    top: -1px;
+}
+.base-colunas
+{
+    width: 100%;
+    float: left;
+    padding: 10px 60px;
+    text-align: center;
+}
+.base-colunas .col
+{
+    width: 300px;
+    float: left;
+    margin-bottom: 60px;
+}
+.base-colunas .col:nth-of-type(2n+0)
+{
+    float: right;
+}
+.base-colunas .col span
+{
+    color: #323232;
+    display: block;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.base-colunas .col .icone
+{
+    width: 100%;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+}
+.base-colunas .col .icone.i1:before
+{
+    content: url(../imagens/nova.png);
+}
+.base-colunas .col .icone.i2:before
+{
+    content: url(../imagens/lista.png);
+}
+.base-colunas .col .icone.i3:before
+{
+    content: url(../imagens/atendente.png);
+}
+.base-colunas .col .icone.i4:before
+{
+    content: url(../imagens/usuario.png);
+}
+.base-colunas .col .icone.i5:before
+{
+    content: url(../imagens/logout.png);
+}
+/*rodape*/
+.base-rodape
+{
+    display: block;
+    padding: 10px;
+    
+}
+.base-rodape p
+{
+    text-align: center;
+    font-size: 0.9em;
+    color: #BBB;
+    text-transform: uppercase;
+}
+
+/*base formulario*/
+.base-formulario
+{
+    padding: 10px 60px;
+}
+
+.base-formulario label
+{
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: .8em;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.base-formulario .btn.cad,
+.base-formulario .btn.limpar
+{
+    display: inline-block;
+    width: auto;
+    padding: 10px 25px;
+    margin-top: 30px;
+}
+
+.base-formulario .btn.limpar
+{
+    background: #C7C7D3;
+    color: #484860;
+}
+.base-formulario .btn.limpar:hover
+{
+    background: #ACACBD;
+}
+
+.btn
+{
+    display: block;
+    padding: 10px;
+    border-radius: 3px;
+        -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+    text-transform: uppercase;
+    color: #FFF;
+    background: #484860;
+    font-size: .8em;
+}
+.btn:hover
+{
+    cursor: pointer;
+    background: #68688A;
+}
+
+/*base-lista*/
+.base-lista
+{
+    padding: 10px 60px;
+    width: 100%;
+    float: left;
+}
+.base-lista span
+{
+    color: #323232;
+    display: block;
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: right;
+}
+.base-lista span b
+{
+    color: #FFBA1E;
+}
+.base-lista .tabela table
+{
+    width: 100%;
+}
+.base-lista .tabela table th,
+.base-lista .tabela table td
+{
+    font-size: .8em;
+}
+
+.base-lista .tabela table th
+{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #20202F;
+    background: #B9B9C8;
+}
+.base-lista .tabela table td
+{
+    padding: 10px;
+    color: #666;
+}
+.base-lista .tabela table tr
+{
+    background: #EEE;
+}
+.base-lista .tabela table tr:nth-of-type(2n+0)
+{
+    background: #F5F5F5;
+}
+.base-lista .tabela .btn
+{
+    text-align: center;
+    padding: 8px 10px;
+    font-size: .85em;
+}
+.base-lista .tabela .btn.exluir
+{
+    background: #C7C7D3;
+    color: #484860;
+}
+.base-lista .tabela .btn.exluir:hover
+{
+    background: #ACACBD;
+}
+.texto1
+{
+    max-width: 200px;
+    max-height: 200px;
+}
